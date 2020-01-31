@@ -1,28 +1,21 @@
 module.exports = function(sequelize, DataTypes) {
     var Post = sequelize.define("Post", {
 
-        gameName: {
+        author: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        playerNumber: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        gameOpen: {
-            type: DataTypes.BOOLEAN,
-            allowNull: false
-        },
-        gameMaster: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        description: {
+        postContent: {
             type: DataTypes.STRING,
             allowNull: false
         }
 
+        // add a post date?
+
     })
 
-    //TODO: has 1 game master has many players has many posts
+    //TODO: has 1 player has 1 game
+
+    return Post
+
 }
