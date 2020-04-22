@@ -1,2 +1,0 @@
-DROP DATABASE rpbypost;
-CREATE DATABASE rpbypost;
